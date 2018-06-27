@@ -1,0 +1,331 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: none;
+  color: initial;
+}
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.Portada{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.PortadaRuralidad::after, .PortadaParticipacion::after, .PortadaConflicto::after, .PortadaCoca::after, .PortadaVictimas::after{
+  display: block;
+  position: relative;
+  background-image: linear-gradient(172deg, transparent, transparent, #000 89%);
+  margin-top: 0;
+  height: 100vh;
+  width: 100vw;
+  content: '';
+}
+.PortadaHome{
+  background: transparent url('assets/portada.jpg') center center no-repeat;
+  background-size: cover;
+}
+.PortadaRuralidad{
+  background: transparent url('assets/paisaje.jpg') center center no-repeat;
+  background-size: cover;
+}
+.PortadaParticipacion{
+  background: transparent url('assets/camino.jpg') center center no-repeat;
+  background-size: cover;
+}
+.PortadaConflicto{
+  background: transparent url('assets/etcr.jpg') center center no-repeat;
+  background-size: cover;
+}
+.PortadaCoca{
+  background: transparent url('assets/horizonte.jpg') center center no-repeat;
+  background-size: cover;
+}
+.PortadaVictimas{
+  background: transparent url('assets/parque.jpg') center center no-repeat;
+  background-size: cover;
+}
+.logoPortada{
+  width: 40vw;
+  position: absolute;
+  right: 5vw;
+  bottom: -7.5vw;
+}
+.tituloPortada{
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 3.7vw;
+  position: absolute;
+  width: 52vw;
+  left: 42vw;
+  top: 67vh;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+.navegacion{
+  text-align: center;
+  width: 81vw;
+  margin: 0 auto 3vw;
+  max-width: 1200px;
+}
+.botonNavegacion{
+  width: 39.8vw;
+  height: 25vw;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ccc;
+  margin: 0.2vw 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 598px;
+  max-height: 350px;
+}
+.botonNavegacion:hover img{
+  filter: grayscale(0.1) blur(0.1px);
+  transition: 0.5s;
+}
+.fondoNavegacion{
+  width: 39.8vw;
+  min-height: 25vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  filter: grayscale(1) blur(2px);
+  transition: 0.5s;
+}
+.tituloNavegacion{
+  text-transform: uppercase;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 2.3vw;
+  top: 10.5vw;
+  width: 39.8vw;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-shadow: #333 0.25vw 0.25vw;
+  max-width: 598px;
+}
+footer{
+  width: 96vw;
+  padding: 2vw;
+  text-align: center;
+  background-color: #333;
+}
+footer p{
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1vw;
+}
+/*Internas*/
+.bloqueContenido{
+  width: 80vw;
+  margin: 5vw auto 0;
+}
+.intertitulo{
+  text-transform: uppercase;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 2vw;
+  color: #333;
+  margin: 2vw 0;
+}
+.textoFull{
+  margin: 2vw auto;
+  font-size: 1.7vw;
+  text-align: justify;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.imagenFull{
+  width: 80vw;
+  margin: 2vw 0 0;
+  max-width: 1200px;
+}
+.pieFoto{
+  background-color: rgba(0,0,0,0.5);
+  margin: 0 auto;
+  color: #fff;
+  padding: 0.5vw 1vw;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5vw;
+}
+iframe{
+  width: 80vw;
+  min-height: 40vw;
+  max-width: 1200px;
+}
+.guaviareCifras{
+  height: 330vw;
+}
+.victimasCifras{
+  height: 50vw;
+}
+.dejacionCifras{
+  height: 85vw;
+}
+.botonVolver, .botonSeguir{
+  width: 80vw;
+  max-width: 1196px;
+  border: solid #000 0.1vw;
+  margin: 0 auto 3vw;
+  background-color: rgba(52, 53, 50, 0.4);
+  position: relative;
+  height: 13vw;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.botonSeguir{
+  text-align: right;
+}
+.botonVolver:hover, .botonSeguir:hover{
+  border-color: #fff;
+  background-color: rgba(52, 53, 50, 0.25);
+}
+.infoVolver{
+  display: inline-block;
+  max-width: 49vw;
+  vertical-align: middle;
+  padding: 4.3vw 0 4vw 5vw;
+}
+.flechaVolver{
+  width: 4vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+.textoVolver, .textoSeguir{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: #333333;
+  font-family: 'Allerta Stencil', sans-serif;
+}
+.logoVolver{
+  display: inline-block;
+  width: 26vw;
+  vertical-align: middle;
+  position: absolute;
+  right: 10vw;
+  top: -6.5vw;
+}
+.flechaSeguir{
+  width: 4vw;
+  display: inline-block;
+  vertical-align: middle;
+  transform: rotateZ(180deg);
+  padding: 4.2vw 0;
+}
+.textoSeguir{
+  margin-left: 35vw;
+}
+#seguridad, #reincorporacion{
+  height: 0;
+  transition: 2s;
+  overflow: hidden;
+}
+
+@media(min-width: 1200px){
+  .bloqueContenido{
+    max-width: 1200px;
+  }
+  .textoFull{
+    font-size: 21px;
+  }
+  .fondoNavegacion{
+    width: 598px;
+    height: auto;
+  }
+  .pieFoto{
+    font-size: 18px;
+  }
+  .tituloNavegacion{
+    font-size: 30px;
+    top: 155px;
+  }
+  iframe{
+    min-height: 675px;
+  }
+  .textoSeguir {
+    margin-left: 400px;
+  }
+}
+
+@media(max-width: 700px){
+  .logoPortada{
+    width: 70vw;
+    display: block;
+    margin: 0 auto;
+    padding-top: 70vh;
+  }
+  .pieFoto{
+    font-size: 3.2vw;
+  }
+  .navegacion{
+    width: 100vw;
+    margin-bottom: 6vw;
+  }
+  .fondoNavegacion{
+    width: 80vw;
+    min-height: 50vw;
+    filter: none;
+  }
+  .tituloNavegacion{
+    width: 80vw;
+    font-size: 4vw;
+    top: 26vw;
+  }
+  .botonNavegacion{
+    width: 80vw;
+    height: 50vw;
+    display: block;
+    margin: 2vw auto;
+  }
+  /*Internas*/
+  .bloqueContenido{
+    width: 100vw;
+  }
+  .textoFull{
+    margin: 5vw auto;
+    font-size: 4.3vw;
+    width: 80vw;
+  }
+  .intertitulo{
+    font-size: 4vw;
+    margin: 0 auto;
+    width: 80vw;
+  }
+  .tituloPortada{
+    font-size: 7vw;
+  }
+  .imagenFull{
+    width: 100vw;
+    margin: 4vw 0 0;
+  }
+  iframe{
+    width: 100vw;
+    min-height: 56vw;
+  }
+  .dejacionCifras{
+    height: 102vw;
+  }
+  .guaviareCifras{
+    height: 410vw;
+  }
+  footer{
+    padding: 5vw 2vw;
+  }
+  footer p{
+    font-size: 4vw;
+    width: 53vw;
+    margin: 0 auto;
+  }
+}
